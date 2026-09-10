@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+/* Configuración general con temática cálida / cottagecore / carrd indie */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', 'Chalkboard SE', 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f7f3e3; /* Fondo crema beige cálido */
+    background-image: radial-gradient(#d6cba8 1.5px, transparent 1.5px); /* Puntos suaves */
+    background-size: 16px 16px;
+    color: #5c4333; /* Texto marrón suave */
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #92ba52; /* Verde oruga */
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px dashed #7a9e40; /* Borde punteado retro */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-header {
+    width: 150px;
+    height: auto;
+}
+
+.logo h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+    text-shadow: 1px 1px 0px #5c4333;
+}
+
+/* BARRA DE BÚSQUEDA DEL HEADER */
+.buscador {
+    display: flex;
+    width: 50%;
+    border: 2px solid #5c4333;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fffef7;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 13px;
+    background-color: transparent;
+    color: #5c4333;
+}
+
+.buscador button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #f0e6c8;
+    color: #5c4333;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.buscador button:hover {
+    background-color: #e4d5a8;
+}
+
+.buscador button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.menu-iconos span {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* CONTENEDOR DE LA PÁGINA */
+.contenedor {
+    max-width: 950px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+/* BANNER */
+.banner {
+    background: #fdfaf0; /* Beige muy clarito tipo papel */
+    padding: 25px;
+    border: 2px solid #c75656; /* Rojo manzana */
+    border-radius: 16px;
+    box-shadow: 0 4px 0px #c75656;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.banner img {
+    max-width: 160px;
+    max-height: 140px;
+    width: auto;
+    height: auto;
+}
+
+.texto-banner h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #c75656; /* Rojo fresa */
+}
+
+.texto-banner h3 {
+    margin: 5px 0;
+    color: #92ba52; /* Verde hoja */
+}
+
+.texto-banner p {
+    font-size: 12px;
+    color: #8c7355;
+}
+
+/* AVISO */
+.aviso {
+    background: #92ba52; /* Verde oruga */
+    padding: 10px;
+    text-align: center;
+    margin: 18px 0;
+    border-radius: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px dashed #ffffff;
+}
+
+.aviso b {
+    color: #fffef7;
+}
+
+/* CATEGORÍAS */
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 25px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item-cat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circulo {
+    background: #fffef7;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    border: 2px solid #92ba52;
+    box-shadow: 0 3px 0px #7a9e40;
+    overflow: hidden;
+    transition: transform 0.1s ease;
+}
+
+.circulo:hover {
+    transform: translateY(-2px);
+}
+
+.circulo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.item-cat span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #5c4333;
+}
+
+/* TARJETAS DE BENEFICIOS */
+.tarjetas {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background: #fffef7;
+    padding: 15px;
+    border: 2px solid #e3cc8b; /* Amarillo/dorado suave */
+    border-radius: 14px;
+    box-shadow: 0 4px 0px #d6bf7f;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+}
+
+.icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+.icono img {
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.tarjeta h4 {
+    color: #c75656; /* Rojo de acento */
+    margin: 8px 0 4px 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tarjeta p {
+    font-size: 11px;
+    color: #735a47;
+    margin: 0;
+}
+
+/* ===================================================
+   SECCIÓN DE FILTROS (Estilo Ventana / Barra Retro)
+   =================================================== */
+.seccion-filtros {
+    background-color: #fcf8ec; /* Fondo papel cálido */
+    border: 2px solid #7a9e40;
+    border-radius: 14px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 0px #7a9e40;
+    margin: 25px 0 20px 0;
+}
+
+/* Barra superior del filtro tipo "Barra de estado / Reproductor" */
+.seccion-filtros h3 {
+    background-color: #92ba52; /* Verde oruga de la imagen */
+    color: #ffffff;
+    margin: 0;
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-bottom: 2px dashed #7a9e40;
+    text-shadow: 1px 1px 0px #5c4333;
+}
+
+/* Contenedor de las entradas de filtro */
+.filtros-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 19px,
+        #e8dfc8 20px
+    ); /* Fondo estilo libreta de apuntes */
+}
+
+/* Inputs y Selects redondos estilo píldora */
+.filtros-box input, 
+.filtros-box select {
+    padding: 6px 14px;
+    border: 2px solid #5c4333;
+    border-radius: 20px;
+    background-color: #fffef7;
+    font-family: inherit;
+    font-size: 13px;
+    color: #5c4333;
+    outline: none;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.05);
+}
+
+.filtros-box input:focus, 
+.filtros-box select:focus {
+    border-color: #92ba52;
+    background-color: #ffffff;
+}
+
+.btn-filtrar {
+    background-color: #92ba52;
+    color: #ffffff;
+    border: 2px solid #7a9e40;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 3px 0px #5c4333;
+    transition: all 0.1s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-shadow: 1px 1px 0px #5c4333;
+}
+
+.btn-filtrar:hover {
+    background-color: #82a845;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 0px #5c4333;
+}
+
+.btn-filtrar:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0px #5c4333;
+}
+
+/* ===================================================
+   TARJETAS DE PRODUCTOS (Estilo Marcos Redondeados)
+   =================================================== */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tarjeta-producto {
+    background: #fdfaf0;
+    border: 2px solid #8c7355;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 0px #d6bf7f;
+    position: relative;
+    transition: transform 0.1s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-3px);
+}
+
+/* Imagen del producto dentro de un marco suave */
+.tarjeta-producto img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    background: #fffef7;
+    border: 2px solid #e3cc8b;
+    border-radius: 12px;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.tarjeta-producto h5 {
+    margin: 6px 0 2px 0;
+    color: #5c4333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Etiqueta tipo píldora */
+.categoria-tag {
+    display: inline-block;
+    background-color: #92ba52;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin: 4px 0;
+    text-shadow: 0.5px 0.5px 0px #5c4333;
+}
+
+.precio {
+    font-size: 17px;
+    font-weight: bold;
+    color: #c75656;
+    margin: 6px 0;
+}
+
+/* Botón Comprar / Agregar */
+.btn-comprar {
+    background-color: #92ba52;
+    color: #ffffff;
+    border: 2px solid #7a9e40;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 3px 0px #5c4333;
+    transition: all 0.1s ease;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-shadow: 1px 1px 0px #5c4333;
+}
+
+.btn-comprar:hover {
+    background-color: #82a845;
+    transform: translateY(-2px);
+}
+
+/* Reducir tamaño del icono de carrito en los botones de producto */
+.btn-comprar .img-btn {
+    width: 40px;  /* Ajusta este valor si los quieres más pequeños o más grandes */
+    height:40px;
+}
+.btn-comprar:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0px #5c4333;
+}
+
+/* Íconos dentro de los botones */
+.img-btn {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
